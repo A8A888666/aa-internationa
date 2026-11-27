@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AA INTERNATIONAL</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{
+
+ margin:0;
+
+ background:#090909;
+
+ color:#f5d78a;
+
+ font-family:Arial,"Microsoft YaHei",sans-serif;
+
+}
+
+header{
+
+ padding:22px 16px;
+
+ display:flex;
+
+ justify-content:space-between;
+
+ align-items:center;
+
+ border-bottom:1px solid #76551e;
+
+}
+
+.logo{font-size:21px;font-weight:bold;color:#e8c16b}
+
+.login button{
+
+ background:#b58a38;color:#080808;
+
+ border:0;border-radius:20px;
+
+ padding:9px 15px;font-weight:bold;
+
+}
+
+main{padding:16px;max-width:600px;margin:auto}
+
+.balance{
+
+ background:linear-gradient(135deg,#38280e,#17110a);
+
+ border:1px solid #a77a2c;
+
+ border-radius:15px;
+
+ padding:22px;text-align:center;
+
+ margin-bottom:16px;
+
+}
+
+.balance h2{margin:8px;color:#fff0bd;font-size:30px}
+
+.small{font-size:13px;color:#c4a66c}
+
+.reward{
+
+ width:100%;padding:13px;
+
+ background:#d6aa52;color:#171008;
+
+ border:0;border-radius:9px;
+
+ font-size:16px;font-weight:bold;
+
+ margin-top:12px;
+
+}
+
+.section-title{
+
+ font-size:18px;margin:24px 0 12px;
+
+ color:#f2d18b;
+
+}
+
+.game{
+
+ background:#17130d;
+
+ border:1px solid #624a24;
+
+ border-radius:12px;
+
+ padding:17px;margin-bottom:12px;
+
+ display:flex;justify-content:space-between;
+
+ align-items:center;
+
+}
+
+.game h3{margin:0 0 7px;color:#ffe1a0}
+
+.game p{margin:0;font-size:12px;color:#bca77d}
+
+.play{
+
+ background:#a87d35;color:#100d08;
+
+ border:0;border-radius:7px;
+
+ padding:9px 16px;font-weight:bold;
+
+}
+
+nav{
+
+ position:fixed;bottom:0;left:0;right:0;
+
+ background:#11100d;
+
+ border-top:1px solid #59431e;
+
+ display:flex;justify-content:space-around;
+
+ padding:13px 3px;
+
+}
+
+nav span{font-size:12px;color:#d9bd82}
+
+footer{
+
+ text-align:center;padding:25px 10px 85px;
+
+ color:#786849;font-size:11px;
+
+}
+
+button{cursor:pointer}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+ <div class="logo">AA INTERNATIONAL</div>
+
+ <div class="login">
+
+  <button onclick="showLogin()">登录 / 注册</button>
+
+ </div>
+
+</header>
+
+<main>
+
+ <div class="balance">
+
+  <div class="small">我的虚拟金币余额</div>
+
+  <h2 id="coins">888888</h2>
+
+  <div class="small">仅供娱乐体验，不具有现金价值</div>
+
+  <button class="reward" onclick="claimReward()">
+
+   每日免费领取 888 金币
+
+  </button>
+
+ </div>
+
+ <div class="section-title">♛ 麻将游戏大厅</div>
+
+ <div class="game">
+
+  <div>
+
+   <h3>四川麻将</h3>
+
+   <p>血战到底 · 虚拟金币娱乐</p>
+
+  </div>
+
+  <button class="play" onclick="comingSoon()">进入游戏</button>
+
+ </div>
+
+ <div class="section-title">♛ PG 游戏展示</div>
+
+ <div class="game">
+
+  <div>
+
+   <h3>游戏展示大厅</h3>
+
+   <p>更多娱乐内容即将开放</p>
+
+  </div>
+
+  <button class="play" onclick="comingSoon()">进入大厅</button>
+
+ </div>
+
+ <div class="section-title">♛ 用户中心</div>
+
+ <div class="game">
+
+  <div>
+
+   <h3>个人账户</h3>
+
+   <p>登录、注册及账户资料</p>
+
+  </div>
+
+  <button class="play" onclick="showLogin()">打开</button>
+
+ </div>
+
+</main>
+
+<footer>
+
+ AA INTERNATIONAL<br><br>
+
+ 纯虚拟金币娱乐演示版<br>
+
+ 不支持真钱充值、提现或现金兑换
+
+</footer>
+
+<nav>
+
+ <span>首页</span>
+
+ <span>麻将</span>
+
+ <span>游戏</span>
+
+ <span onclick="showLogin()">我的</span>
+
+</nav>
+
+<script>
+
+let coins=888888;
+
+let claimed=false;
+
+function claimReward(){
+
+ if(claimed){
+
+  alert("今天已经领取过了！");
+
+  return;
+
+ }
+
+ coins+=888;
+
+ claimed=true;
+
+ document.getElementById("coins").innerText=coins;
+
+ alert("领取成功！获得888虚拟金币。");
+
+}
+
+function showLogin(){
+
+ alert("AA INTERNATIONAL\n登录注册功能将在正式开发阶段接入。");
+
+}
+
+function comingSoon(){
+
+ alert("游戏大厅正在开发中，敬请期待！");
+
+}
+
+</script>
+
+</body>
+
+</html>
