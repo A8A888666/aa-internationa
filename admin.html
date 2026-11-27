@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang=”zh-CN“>
+
+<head>
+
+<meta charset=”UTF-8“>
+
+<meta name=”viewport“ content=”width=device-width,initial-scale=1“>
+
+<title>A8 INTERNATIONAL 管理后台</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{
+
+ margin:0;background:#090909;color:#f3d58e;
+
+ font-family:Arial,”Microsoft YaHei“,sans-serif;
+
+}
+
+header{
+
+ padding:20px 16px;background:#15110a;
+
+ border-bottom:1px solid #8b682c;
+
+}
+
+.logo{font-size:21px;font-weight:bold}
+
+header p{font-size:12px;color:#b49a69;margin-bottom:0}
+
+main{padding:16px;max-width:650px;margin:auto}
+
+h2{font-size:18px;margin:22px 0 12px}
+
+.grid{
+
+ display:grid;grid-template-columns:1fr 1fr;gap:12px;
+
+}
+
+.card{
+
+ background:#19150e;border:1px solid #6c5128;
+
+ border-radius:12px;padding:17px;
+
+}
+
+.card small{color:#bca77d}
+
+.number{font-size:23px;margin-top:10px;color:#ffe4a5}
+
+.menu{
+
+ background:#19150e;border:1px solid #594522;
+
+ border-radius:10px;padding:16px;margin-bottom:10px;
+
+ display:flex;justify-content:space-between;
+
+ align-items:center;
+
+}
+
+.menu strong{font-size:15px}
+
+.menu button{
+
+ background:#b68b42;color:#100c06;
+
+ border:0;border-radius:7px;padding:9px 12px;
+
+ font-weight:bold;
+
+}
+
+.note{
+
+ background:#241b0d;border-radius:10px;
+
+ padding:14px;color:#c6ae7e;
+
+ font-size:12px;line-height:1.7;margin-top:20px;
+
+}
+
+footer{text-align:center;padding:25px;color:#796849;font-size:11px}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+ <div class=”logo“>A8 INTERNATIONAL</div>
+
+ <p>ADMIN CONTROL CENTER · 管理员控制中心</p>
+
+</header>
+
+<main>
+
+ <h2>数据总览</h2>
+
+ <div class=”grid“>
+
+  <div class=”card“>
+
+   <small>演示用户数量</small>
+
+   <div class=”number“>0</div>
+
+  </div>
+
+  <div class=”card“>
+
+   <small>虚拟金币总量</small>
+
+   <div class=”number“>888888</div>
+
+  </div>
+
+  <div class=”card“>
+
+   <small>游戏大厅</small>
+
+   <div class=”number“>2</div>
+
+  </div>
+
+  <div class=”card“>
+
+   <small>系统状态</small>
+
+   <div class=”number“>演示版</div>
+
+  </div>
+
+ </div>
+
+ <h2>平台管理</h2>
+
+ <div class=”menu“>
+
+  <strong>👥 用户管理</strong>
+
+  <button onclick=”demo(’用户管理‘)“>进入</button>
+
+ </div>
+
+ <div class=”menu“>
+
+  <strong>🪙 虚拟金币管理</strong>
+
+  <button onclick=”demo(’虚拟金币管理‘)“>进入</button>
+
+ </div>
+
+ <div class=”menu“>
+
+  <strong>🎁 每日奖励设置</strong>
+
+  <button onclick=”demo(’每日奖励设置‘)“>进入</button>
+
+ </div>
+
+ <div class=”menu“>
+
+  <strong>🀄 四川麻将管理</strong>
+
+  <button onclick=”demo(’四川麻将管理‘)“>进入</button>
+
+ </div>
+
+ <div class=”menu“>
+
+  <strong>🎮 游戏展示管理</strong>
+
+  <button onclick=”demo(’游戏展示管理‘)“>进入</button>
+
+ </div>
+
+ <div class=”menu“>
+
+  <strong>📢 公告管理</strong>
+
+  <button onclick=”demo(’公告管理‘)“>进入</button>
+
+ </div>
+
+ <div class=”note“>
+
+  安全提示：当前为管理员后台界面演示版。
+
+  尚未连接数据库、真实管理员账号或权限系统。
+
+  请勿在此输入真实用户资料或资金信息。
+
+  平台仅用于虚拟金币娱乐演示，不支持真钱充值提现。
+
+ </div>
+
+</main>
+
+<footer>
+
+ A8 INTERNATIONAL · ADMIN PANEL
+
+</footer>
+
+<script>
+
+function demo(name){
+
+ alert(name+”：功能正在开发中，当前为界面演示。“);
+
+}
+
+</script>
+
+</body>
+
+</html>
